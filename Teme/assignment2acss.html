@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 2</title>
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .wrapper {
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+            background-color: #050210;
+            overflow: hidden;
+        }
+
+        .ring-light {
+            width: 320px;
+            height: 320px;
+            border-radius: 50%;
+            background: linear-gradient(#fb5dad, #55fb9f, #b97aff);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            animation: ring-light .8s infinite linear;
+        }
+
+        .ring-light-blurred {
+            width: 280px;
+            height: 280px;
+            border-radius: 50%;
+            background: linear-gradient(#fb5dad, #55fb9f, #b97aff);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            filter: blur(64px);
+            animation: ring-light 0.8s infinite linear;
+        }
+
+        .circle {
+            width: 280px;
+            height: 280px;
+            border-radius: 50%;
+            background-color: #050210;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .growing-circle {
+            width: 280px;
+            height: 280px;
+            border-radius: 50%;
+            background-color: #1f2937;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0);
+            filter: opacity(1);
+            animation: grow 2s infinite ease;
+        }
+
+        @keyframes ring-light {
+            0% {
+                transform: translate(-50%, -50%) rotate(0deg);
+            }
+
+            100% {
+                transform: translate(-50%, -50%) rotate(360deg);
+            }
+        }
+
+        @keyframes grow {
+            0% {
+                transform: translate(-50%, -50%) scale(0);
+                filter: opacity(1);
+            }
+
+            100% {
+                transform: translate(-50%, -50%) scale(1);
+                filter: opacity(0);
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="ring-light"></div>
+        <div class="ring-light-blurred"></div>
+        <div class="circle"></div>
+        <div class="growing-circle"></div>
+    </div>
+</body>
+
+</html>
