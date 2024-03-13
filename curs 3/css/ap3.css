@@ -22,12 +22,12 @@ section {
 }
 
 div {
-    font-size: 16px;
+    font-size: 36px;
 
 }
 
 .font_em {
     font-size: 1em;
-    /* 1 x 16px = 16px */
+    /* 1 x 36px = 36px */
     color: blue;
 }
