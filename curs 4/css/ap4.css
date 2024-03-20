@@ -1,0 +1,15 @@
+:root {
+  --mycolor: rgb(43, 255, 0);
+  --myBg: rgba(255, 183, 0, 0.893);
+}
+/* body{
+    --mycolor:blue;
+} */
+
+.block {
+  --mycolor: red;
+  background-color:var(--myBg);
+}
+p {
+  color: var(--mycolor);
+}

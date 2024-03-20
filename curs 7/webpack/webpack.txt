@@ -1,0 +1,105 @@
+//https://dev.to/anitaparmar26/webpack-5-guide-for-beginners-314c
+//https://github.com/anitaparmar26/webpack-5-tutorial/blob/main/webpack.config.js
+
+I. Pentru a automatiza fisierele HTML  folosint un template HTML pentru toate paginile
+1.Instalam  Node.js
+ https://nodejs.org/en/download/
+
+2. Verificam in command prompt
+node -v
+npm -v
+
+3. In proiectul curent
+npm init -y
+
+4. Instalam Webpack
+npm install webpack webpack-cli --save-dev
+
+5. Verificam in command prompt
+npx webpack -v
+sau 
+./node_modules/webpack-cli/bin/cli.js -v
+
+6. Instalam modulele necesare
+html-webpack-plugin - adauga js, css cod html in fisierul HTML
+
+npm install html-webpack-plugin --save-dev
+
+7. facem un fiser de configurare webpack.config.js
+copiem continutul de pe github din fisierul webpack.config_v1.js
+ 
+8. modificam package.json
+ "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode production",
+    "dev": "webpack --mode development"
+  },
+
+9. Facem  fisierele header.html, footer.html
+
+10. Geneream fisierul index.html din dist pentru productie
+npm run dev
+sau
+npm run build 
+
+
+
+II. Pentru a transforma in mod automat fisiere scss/sass/less in css folosim Webpack
+
+
+Sunt mai multe module ce pot fi folosite
+css-loader - grupeaza fisierele CSS importate si le exporta intr-un singur fiser
+postcss-loader - optimizeaza si minimizeaza fisierul CSS
+style-loader - adauga fisierul CSS in fisierul HTML
+js-loader - grupeaza fisierele JS importate si le exporta intr-un singur fiser
+file-loader - importa imagini, fonturi
+
+    npm install css-minimizer-webpack-plugin --save-dev
+    npm install --save-dev mini-css-extract-plugi
+    npm install node-sass style-loader css-loader postcss-loader cssnano --save-dev
+    npm i mini-css-extract-plugin breakpoint-sass autoprefixer --save-dev
+
+11. 
+In fisierul index.js  adaugam 
+import './scss/style.scss';
+
+12.
+Exemplu 1 Adauga style inline  webpack.config_v2.js:
+npm install sass-loader sass --save-dev
+npm install node-sass style-loader css-loader --save-dev
+
+13. 
+Exemplu 2 Recomandat  adauga CSS extern  webpack.config_v3.js:
+npm install sass-loader sass --save-dev
+npm install node-sass style-loader css-loader postcss-loader --save-dev
+
+
+
+
+III. Optimizare imagini
+14.
+Importa imaginile si le transforma in wepb
+npm install imagemin-webp-webpack-plugin --save-dev
+npm i webpack-image-resize-plugin --save-dev
+
+copiem fiserul de pe github webpack.config.webp.js
+
+15.
+adaugam in package.json la scripts 
+ "imgtoweb": "node webpack.config.webp.js",
+
+ npm run imgtoweb
+
+
+ IV. Traducerea fisierelor statice HTML 
+ Accesati aceste tutoriale:
+ https://medium.com/@nohanabil/building-a-multilingual-static-website-a-step-by-step-guide-7af238cc8505
+ https://idesignzone.com/how-to-create-a-multilingual-website-in-html/
+
+ Ca sa generam automat fisierele .json putem folosi modulul
+ https://github.com/claudetech/node-static-i18n
+
+
+
+
+

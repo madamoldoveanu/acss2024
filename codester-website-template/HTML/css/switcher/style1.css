@@ -1,0 +1,84 @@
+#style-switcher h2 a { background: #e94b49 none repeat scroll 0 0 }
+
+/*START SCROLL TO TOP*/
+#scrollUp{
+	color: #fff!important;
+}
+#scrollUp:hover {
+	background: #e94b49 none repeat scroll 0 0;
+	
+}
+/*END SCROLL TO TOP*/
+
+
+a, a:hover, a:focus,
+.fot_menu li a:hover,
+.testimonials_area h5 a{
+    color: #e94b49;
+}
+.btn:hover ,
+input[type="submit"]:hover, 
+input[type="submit"]:focus, 
+button:hover, button:focus, 
+.radon:hover, 
+.radon:focus{
+  border: 1px solid #e94b49;
+  color: #e94b49;
+}
+input[type="submit"] {
+  background: #e94b49 none repeat scroll 0 0;
+  border-color: #e94b49;
+}
+.btn,
+.portfolio-block a:hover .port-title,
+.btn-border:hover {
+  background-color: #e94b49;
+  border-color: #e94b49;
+  
+}
+.explore_btn:hover, .explore_btn:focus {
+  background: #fff none repeat scroll 0 0;
+  color: #e94b49;
+  border-color: #e94b49;
+}
+.nivo-directionNav a:hover,
+.testimonials_area i.fa {
+  background: #e94b49 none repeat scroll 0 0;
+}
+.section-title span,
+.about_box:hover .about_icon,
+.team-details,
+.team-social-list > a:hover,
+.post-slide .post-date,
+.social_icons ul li a:hover,
+.progress-bar > span,
+.double-bounce1, .double-bounce2{
+	background: #e94b49 none repeat scroll 0 0!important;
+}
+
+.about_icon,
+.btn-border,
+.social_icons ul li a {
+  border: 1px solid #e94b49;
+  color: #e94b49;
+}
+.single_services:hover .services_img span,
+.single_services:hover .services_text h3,
+.team-social-list > a,
+.icon_color ,
+.counter_area i.fa,
+.form-content-area-main h3,
+.price-table i,
+.contact_address li span,
+.social_icons ul li a,
+#main_nav li a:hover, #main_nav li a:focus, #main_nav li.current a,
+.testimonials_area h5,
+.section-top-title ol li a:hover {
+    color: #e94b49;
+}
+
+
+/*START MENU*/
+
+/*END MENU*/
+

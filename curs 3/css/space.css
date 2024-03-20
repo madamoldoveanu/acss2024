@@ -1,0 +1,23 @@
+body {
+  background-image: url("../img/rocket.png"), url("../img/earth.png"),
+    url("../img/space2.png");
+  background-repeat: no-repeat, no-repeat, repeat;
+  background-size: auto, 20%, auto;
+  background-position: 0% 80%, center center, 0% 0%;
+  height: 100vh;
+  animation-name: demo;
+  animation-duration: 5s;
+  animation-iteration-count: 2;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+@keyframes demo {
+  from {
+    background-position: 0% 80%, center center, 0 0;
+    background-size: 30%, 10%, auto;
+  }
+  to {
+    background-position: 80% 30%, center center, -1024px 0;
+    background-size: 5%, 30%, auto;
+  }
+}
